@@ -224,7 +224,8 @@ jobs:
     - destroy-environment
   run-migrations:
     docker:
-      - image: cimg/python:3.10
+      - image:  cimg/python:3.11.1
+      - image: cimg/base:2022.09
     steps:
       - checkout
       - install_awscli
